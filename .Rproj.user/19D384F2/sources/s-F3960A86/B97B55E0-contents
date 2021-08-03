@@ -8,6 +8,9 @@ tbls <- sqlTables(mdbConnect)
 
 contacts <- sqlFetch(mdbConnect, "Contacts")
 
+write.csv(contacts, "contactsdata.csv", row.names=F)
+
+
 ContactTypeAUX <- sqlFetch(mdbConnect, "ContactType")
 EfficiencyTypeAUX <- sqlFetch(mdbConnect, " Efficiency Type")
 
@@ -15,9 +18,18 @@ EfficiencyTypeAUX <- sqlFetch(mdbConnect, " Efficiency Type")
 odbcClose(mdbConnect)
 
 
-#PhysicalState
+# ContactType
 
-#References
+# EfficiencyType
+
+# PhysicalState
+
+# References
 
 #Substances
 
+# TE Analysis
+
+# TransferEfficiencySource
+
+# TransferType
