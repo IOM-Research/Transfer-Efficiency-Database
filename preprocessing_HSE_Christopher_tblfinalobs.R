@@ -1,7 +1,7 @@
 # preprocessing touch data
 
 # run the other file first
-source("preprocessing_HSE_microactivity.R")
+source("preprocessing_HSE_Christopher_microactivity.R")
 
 # load packages
 library(readxl)
