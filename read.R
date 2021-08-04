@@ -8,11 +8,13 @@ tbls <- sqlTables(mdbConnect)
 
 contacts <- sqlFetch(mdbConnect, "Contacts")
 
-write.csv(contacts, "contactsdata.csv", row.names=F)
+#write.csv(contacts, "contactsdata.csv", row.names=F)
 
 
-ContactTypeAUX <- sqlFetch(mdbConnect, "ContactType")
-EfficiencyTypeAUX <- sqlFetch(mdbConnect, " Efficiency Type")
+for(i in c("ContactType", "Efficiency Type", "PhysicalState", "References", "Substances", "TE Analysis", "TransferEfficiencySource", "TransferType")){
+outputAUX <- sqlFetch(mdbConnect, i)
+write.csv(outputAUX, paste0("data/", i ,".csv"), row.names=F)
+}
 
 
 odbcClose(mdbConnect)
