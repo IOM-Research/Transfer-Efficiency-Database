@@ -1,0 +1,24 @@
+{
+    "id": "44B029BB",
+    "path": "~/GitHub/Transfer-Efficiency-Database/preprocessing_IOM.R",
+    "project_path": "preprocessing_IOM.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1628071612993.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "cursorPosition": "3,56",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1628072357,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1628072357312,
+    "read_only": false,
+    "read_only_alternatives": []
+}
